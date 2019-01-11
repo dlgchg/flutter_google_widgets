@@ -5,39 +5,14 @@ import 'widget/safe_area.dart';
 import 'widget/expanded.dart';
 import 'widget/warp.dart';
 import 'widget/opacity.dart';
+import 'widget/future_builder.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  List<Widget> widgets = [
-    GoogleLayoutBuilder(),
-    GoogleFittedBox(),
-    GoogleSafeArea(),
-    GoogleExpand(),
-    GoogleWarp(),
-    GoogleOpacity(),
-  ];
 
   @override
   Widget build(BuildContext context) {
-    Widget _widget = Container(
-      color: Colors.white,
-    );
-    bool _home = true;
-
-    List<Widget> bodys = [
-      ListView.builder(
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(widgets[index].toString()),
-          );
-        },
-        itemCount: widgets.length,
-      ),
-      Container(
-        child: _widget,
-      ),
-    ];
     return HomeWidget();
   }
 }
@@ -55,6 +30,7 @@ class HomeWidgetState extends State<HomeWidget> {
     GoogleExpand(),
     GoogleWarp(),
     GoogleOpacity(),
+    GoogleFutureBuilder(),
   ];
   int _index = 0;
   bool _home = true;
