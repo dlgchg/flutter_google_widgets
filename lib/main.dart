@@ -7,6 +7,8 @@ import 'widget/warp.dart';
 import 'widget/opacity.dart';
 import 'widget/future_builder.dart';
 import 'widget/fade_transition.dart';
+import 'widget/floating_action_button.dart';
+import 'widget/page_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,6 +35,8 @@ class HomeWidgetState extends State<HomeWidget> {
     GoogleOpacity(),
     GoogleFutureBuilder(),
     GoogleFadeTransition(),
+    GoogleFloatingActionButton(),
+    GooglePageView(),
   ];
   int _index = 0;
   bool _home = true;
