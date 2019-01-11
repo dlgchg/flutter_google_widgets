@@ -28,6 +28,7 @@
 .pub/
 build/
 .idea/
+.push.sh
 
 # Android related
 **/android/**/gradle-wrapper.jar
