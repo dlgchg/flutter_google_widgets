@@ -8,10 +8,11 @@ Flutter的Widget集合代码,不断更新中
 
 
 ### Opacity
-<img src="https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/opacity.gif" alt="Sample"  width="200" height="500">
+<img src="https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/opacity.gif" alt="Sample"  width="220" height="370">
 
 ### Expand
-![Expand](https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/expanded_1.png)
+<img src="https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/expanded_1.png" alt="Sample">
 
 ### Wrap
-![Wrap](https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/warp_1.png)
+<img src="https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/warp_1.png" alt="Sample"  width="200" height="400">
+
