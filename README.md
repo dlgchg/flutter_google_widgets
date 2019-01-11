@@ -10,4 +10,4 @@ Flutter的Widget集合代码,不断更新中
 
 ![Expand](https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/expanded_1.png)
 
-![Wrap](https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/wrap_1.png)
+![Wrap](https://raw.githubusercontent.com/dlgchg/flutter_google_widgets/master/screenshots/warp_1.png)
