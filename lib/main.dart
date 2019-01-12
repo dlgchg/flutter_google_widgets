@@ -11,6 +11,7 @@ import 'widget/floating_action_button.dart';
 import 'widget/page_view.dart';
 import 'widget/table.dart';
 import 'widget/sliver_appbar.dart';
+import 'widget/fade_in_image.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,6 +41,7 @@ class HomeWidgetState extends State<HomeWidget> {
     GooglePageView(),
     GoogleTable(),
     GoogleSliverAppBar(),
+    GoogleFadeInImage(),
   ];
   int _index = 0;
   bool _home = true;
