@@ -10,11 +10,11 @@ import 'widget/fade_transition.dart';
 import 'widget/floating_action_button.dart';
 import 'widget/page_view.dart';
 import 'widget/table.dart';
+import 'widget/sliver_appbar.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return HomeWidget();
@@ -39,6 +39,7 @@ class HomeWidgetState extends State<HomeWidget> {
     GoogleFloatingActionButton(),
     GooglePageView(),
     GoogleTable(),
+    GoogleSliverAppBar(),
   ];
   int _index = 0;
   bool _home = true;
@@ -51,8 +52,18 @@ class HomeWidgetState extends State<HomeWidget> {
           title: Text(widgets[index].toString().replaceAll('Google', '')),
           onTap: () {
             setState(() {
-              _index = index;
-              _home = false;
+              if (index == 11) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return GoogleSliverAppBar();
+                    },
+                  ),
+                );
+              } else {
+                _index = index;
+                _home = false;
+              }
             });
           },
         );
@@ -61,13 +72,16 @@ class HomeWidgetState extends State<HomeWidget> {
     );
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text(_home ? 'Widget' : widgets[_index].toString().replaceAll('Google', '')),
+          title: Text(_home
+              ? 'Widget'
+              : widgets[_index].toString().replaceAll('Google', '')),
           leading: _home
               ? Container()
               : IconButton(
