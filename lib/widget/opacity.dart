@@ -67,8 +67,8 @@ class GoogleOpacityState extends State<GoogleOpacity> {
         Stack(
           children: <Widget>[
             Container(
-              width: 200.0,
-              height: 200.0,
+              width: 150.0,
+              height: 150.0,
               child: Image.network(
                   'http://img2.imgtn.bdimg.com/it/u=2755523882,2215399258&fm=200&gp=0.jpg'),
             ),
@@ -76,8 +76,8 @@ class GoogleOpacityState extends State<GoogleOpacity> {
               duration: Duration(seconds: 1),
               opacity: _opacity,
               child: Container(
-                width: 200.0,
-                height: 200.0,
+                width: 150.0,
+                height: 150.0,
                 color: Colors.blue,
               ),
             ),
