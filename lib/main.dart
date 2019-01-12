@@ -9,6 +9,7 @@ import 'widget/future_builder.dart';
 import 'widget/fade_transition.dart';
 import 'widget/floating_action_button.dart';
 import 'widget/page_view.dart';
+import 'widget/table.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,6 +38,7 @@ class HomeWidgetState extends State<HomeWidget> {
     GoogleFadeTransition(),
     GoogleFloatingActionButton(),
     GooglePageView(),
+    GoogleTable(),
   ];
   int _index = 0;
   bool _home = true;
@@ -46,7 +48,7 @@ class HomeWidgetState extends State<HomeWidget> {
     Widget _lb = ListView.builder(
       itemBuilder: (context, index) {
         return ListTile(
-          title: Text(widgets[index].toString()),
+          title: Text(widgets[index].toString().replaceAll('Google', '')),
           onTap: () {
             setState(() {
               _index = index;
@@ -65,7 +67,7 @@ class HomeWidgetState extends State<HomeWidget> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Widget'),
+          title: Text(_home ? 'Widget' : widgets[_index].toString().replaceAll('Google', '')),
           leading: _home
               ? Container()
               : IconButton(
