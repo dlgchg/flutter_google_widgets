@@ -1,7 +1,5 @@
 # flutter_google_widget
 
-Flutter的Widget集合代码,不断更新中
-
 ## 看一看
 
 [我的博客](http://flutterliker.com)
